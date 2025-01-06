@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Django CRUD{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'app_name/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
