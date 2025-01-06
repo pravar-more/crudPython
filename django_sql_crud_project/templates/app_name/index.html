@@ -1,0 +1,11 @@
+{% extends 'app_name/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Items List</h1>
+<ul>
+    {% for item in items %}
+    <li><a href="{% url 'detail' item.pk %}">{{ item.name }}</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'create' %}">Create New Item</a>
+{% endblock %}
