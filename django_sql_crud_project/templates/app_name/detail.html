@@ -1,0 +1,9 @@
+{% extends 'app_name/base.html' %}
+{% block title %}Detail{% endblock %}
+{% block content %}
+<h1>{{ item.name }}</h1>
+<p>{{ item.description }}</p>
+<a href="{% url 'update' item.pk %}">Edit</a>
+<a href="{% url 'delete' item.pk %}">Delete</a>
+<a href="{% url 'index' %}">Back to list</a>
+{% endblock %}
